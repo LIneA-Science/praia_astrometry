@@ -37,7 +37,7 @@ How to run PRAIA
 
 OBS: 
  - Assuming you're connected to the LIneA's environment.
- - On /app dir create symlinks to /data/PRAIA_astrometry_30_06_10.dat, /data/output and to the image file .fits. Whithout those the execution will thow an erro like this:
+ - On /app dir create symlinks to /data/PRAIA_astrometry_30_06_10.dat, /data/output and to the image file .fits. Whithout those the execution will throw up an error like this:
 
  ```sh
  Proccessing field     1 of     1: file = D00374550_z_c06_r2262p01_immasked.fits                                                                                                                
