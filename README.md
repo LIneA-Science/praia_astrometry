@@ -35,4 +35,23 @@ How to run PRAIA
  docker exec teste sh -c '/app/PRAIA_astrometry_30_06 < /data/PRAIA_astrometry_30_06_10.dat'
  ```
 
-OBS: Assuming you're connected to the LIneA's environment.
+OBS: 
+ - Assuming you're connected to the LIneA's environment.
+ - On /app dir create symlinks to /data/PRAIA_astrometry_30_06_10.dat, /data/output and to the image file .fits. Whithout those the execution will thow an erro like this:
+
+ ```sh
+ Proccessing field     1 of     1: file = D00374550_z_c06_r2262p01_immasked.fits                                                                                                                
+ Reached end of fits file. Exiting.
+
+ Identifing and measuring objects. Please wait ...
+
+ Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
+
+ Backtrace for this error:
+ #0  0x7fecca7924f5 in ???
+ #1  0x7fecca791af9 in ???
+ #2  0x7fecca94d801 in ???
+ Segmentation fault (core dumped)
+ /app # read escape sequence
+
+ ```
